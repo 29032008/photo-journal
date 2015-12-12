@@ -5,3 +5,17 @@ body {
   margin: 0px; padding: 0px;
 }
 
+/* Captions
+----------------------------------------------------------------------------- */
+
+img + em, iframe + em {
+  display: block;
+  font-family: 'Source Sans Pro';
+  font-size: 11px;
+  color: #c6c6c6;
+  letter-spacing: .1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
