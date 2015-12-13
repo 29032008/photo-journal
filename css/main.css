@@ -22,7 +22,48 @@ img + em, iframe + em {
 /* Photos
 ----------------------------------------------------------------------------- */
 
-img.full {
+.two-imgs img:first-child, .two-imgs-mixed img:first-child,
+.three-imgs img:first-child, .three-imgs-mixed img:first-child {
+  margin-left: 0;
+}
+
+.two-imgs img, .two-imgs-mixed img,
+.three-imgs img, .three-imgs-mixed img {
+  margin-left: 3.33333%;
+}
+
+.full > img {
   width: 100%;
 }
 
+/* Two images ------------------------ */
+
+.two-imgs > img {
+  width: 48%;
+}
+
+.two-imgs-mixed > img.vert {
+  width: 32%;
+}
+
+.two-imgs-mixed img:not(.vert) {
+  width: 64%;
+}
+
+/* Three images ------------------------ */
+
+.three-imgs > img {
+  width: 30.7666666667%;
+}
+
+.three-imgs-mixed > img.vert {
+  width: 18.5%;
+}
+
+.three-imgs-mixed img:not(.vert) {
+  width: 36.85%;
+}
+
+.three-imgs-mixed > img.vert ~ img.vert {
+  width: 24%;
+}
